@@ -1,0 +1,108 @@
+{
+    "Portal": {
+        "info": {
+            "name":"Portal Automation Project",
+            "description":"Report for Portal automation project",
+            "git": "https://github.com/HAEDev/AutomationTests",
+            "branch": "portal_new_ui",
+            "jenkin_job": "https://jenkins.haegroup.com/job/Portal_Test/",
+            "build_trigger": "Daily at 8PM",
+            "remarks": "N/A"
+        },
+        "jenkins_report_dev": {
+            "runs_number":"10",
+            "portal":"development-portal"
+        },
+        "youtrack": {
+            "defects":"50",
+            "bugs":"10",
+            "scripts":"35",
+            "precheck":"5"
+        },
+        "totalData": [
+            {
+                "name": "Implemented",
+                "total": 421
+            },
+            {
+                "name": "Not Implemented",
+                "total": 176
+            }
+        ],
+        "dateData": [
+            {
+                "date": "July 08, 2020",
+                "Passes": 300,
+                "Failures": 20,
+                "Pending": 10
+            },
+            {
+                "date": "July 09, 2020",
+                "Passes": 500,
+                "Failures": 10,
+                "Pending": 0
+            },
+            {
+                "date": "July 10, 2020",
+                "Passes": 400,
+                "Failures": 60,
+                "Pending": 0
+            },
+            {
+                "date": "July 11, 2020",
+                "Passes": 600,
+                "Failures": 90,
+                "Pending": 10
+            },
+            {
+                "date": "July 12, 2020",
+                "Passes": 200,
+                "Failures": 0,
+                "Pending": 0
+            }
+        ]
+    },
+    "TSA": {
+        "info": {
+            "name":"Portal Automation Project",
+            "description":"Report for Portal automation project",
+            "git": "https://github.com/HAEDev/AutomationTests",
+            "branch": "portal_new_ui",
+            "jenkin_job": "https://jenkins.haegroup.com/job/Portal_Test/",
+            "build_trigger": "Daily at 8PM",
+            "remarks": "N/A"
+        },
+        "totalData": [
+            {
+                "name": "Automation",
+                "total": 0
+            },
+            {
+                "name": "Total Test Case",
+                "total": 0
+            }
+        ],
+        "dateData": [
+            {
+                "date": "July 08, 2020",
+                "testCases": 0
+            },
+            {
+                "date": "July 09, 2020",
+                "testCases": 0
+            },
+            {
+                "date": "July 10, 2020",
+                "testCases": 0
+            },
+            {
+                "date": "July 11, 2020",
+                "testCases": 0
+            },
+            {
+                "date": "July 12, 2020",
+                "testCases": 0
+            }
+        ]
+    }
+}
