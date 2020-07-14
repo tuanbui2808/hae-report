@@ -3,6 +3,7 @@ import { BackTop, PageHeader, Descriptions } from 'antd'
 import DashBoard from '../components/DashBoard'
 import Information from '../components/Information'
 import {
+  InfoCircleOutlined,
   AppstoreOutlined,
   PieChartOutlined,
 } from '@ant-design/icons';
@@ -36,8 +37,9 @@ class AnalystPage extends Component {
         </div>
         <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
           <BackTop />
-          <h3 className='area_subject'><AppstoreOutlined /> Overview / Month: July 2020</h3>
+          <h3 className='area_subject'><AppstoreOutlined /> Overview</h3>
           <DashBoard dataDashboard={dataDashboard} dataInformation={dataInformation}/>
+          <h3 className='area_subject'> <InfoCircleOutlined /> Month: July 2020</h3>
           <h3 className='area_subject'><PieChartOutlined /> Weekly Status: development-portal</h3>
           <Information dataInformation={dataInformation} />
           <h3 className='area_subject'><PieChartOutlined /> Weekly Status: test-portal</h3>
