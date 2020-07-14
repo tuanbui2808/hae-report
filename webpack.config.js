@@ -14,6 +14,11 @@ function resolve (dir) {
 
 module.exports = {
   mode: 'production',
+  node: {
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty'
+  },
   entry: './src/index.js',
   output: {
     path: resolve('dist'),

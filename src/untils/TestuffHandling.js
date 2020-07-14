@@ -5,7 +5,6 @@ var authentication = btoa(config.testuff.user + ":" + config.testuff.pass);
 
 class TestuffHandling {
     async getTotalTests(suitePath, branchID) {
-        let suiteID = await this.getSuiteID(suite);
         var options = {
             method: 'GET',
             url: config.testuff.url + 'test/' + '?suite_path=' + suitePath + '&branch=' + branchID + '&meta_only=True',
