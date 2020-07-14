@@ -1,0 +1,15 @@
+{
+  "testuff": {
+    "url": "https://service3.testuff.com/api/v0/",
+    "user": "tuan.bui@haegroup.com",
+    "pass": "tuanbui123!",
+    "branchId": "dxa2smgk5yc23axndpkoyvihkhm5d7o2",
+    "parentLab": null,
+    "lab": "Automation Test 0.1.0",
+    "isNewLab": false
+  },
+  "youtrack": {
+    "url": "https://youtrack.haegroup.com/api/",
+    "token": "perm:dHVhbi5idWk=.NTMtNA==.QoxK9BjAeBPPaMLH01c7r87AGJr4DG"
+  }
+}

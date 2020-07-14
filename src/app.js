@@ -7,6 +7,7 @@ import { ProjectOutlined } from '@ant-design/icons';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import AnalystPage from './pages/AnalystPage';
 import data from './data.json'
+const testuff = require('./untils/TestuffHandling');
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -28,6 +29,8 @@ const generateMenu = () => {
 }
 
 const generatePageData = () => {
+    var a = testuff.getTotalTests();
+    console.log(a);
     const menuKeys = Object.keys(menuItems)
     const menuPage = []
     for (let i = 0; i < menuKeys.length; i++) {
