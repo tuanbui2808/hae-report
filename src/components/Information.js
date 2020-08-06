@@ -28,7 +28,7 @@ export default class Information extends React.Component {
     const dataPortal = this.props.dataPortal;
     return (
       <Row>
-        <Row style={{ 'margin-bottom': '20px' }}>
+        <Row style={{ marginBottom: '20px' }}>
           <Col span={12} >
             <Descriptions size="small" column={1}>
               <Descriptions.Item label="Number Of Runs"><a href={projectInfo.jenkin_job}>{dataPortal.runs_number}</a></Descriptions.Item>
@@ -61,7 +61,7 @@ export default class Information extends React.Component {
           <BrushBarChart dataTest={this.props.dataPortal.dateData.week4} />
         </Col>
         <Col span={24} className='main_information'>
-          <Card style={{ 'margin-bottom': '60px' }}>
+          <Card style={{ marginBottom: '60px' }}>
             <Row span={24}>
               <Col>
                 <LabelInfo title='Report Date' context={date} icon={<BoxPlotFilled />} />

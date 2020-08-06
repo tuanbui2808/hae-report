@@ -4,7 +4,7 @@ import { hot } from 'react-hot-loader'
 import './index.css';
 import { Layout, Menu } from 'antd';
 import { ProjectOutlined } from '@ant-design/icons';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Link, Switch } from "react-router-dom";
 import AnalystPage from './pages/AnalystPage';
 import data from './data.json';
 var config = require('./Config.json');
@@ -22,7 +22,7 @@ const generateMenu = () => {
     for (let i = 0; i < menuData.length; i++) {
         let index = i + 1;
         menu.push(
-            < Menu.Item key={index} >
+            < Menu.Item key={"#/" + menuData[i]} >
                 <ProjectOutlined />
                 <span>{menuData[i]}</span>
                 <Link to={"/" + menuData[i]} />
@@ -58,7 +58,6 @@ const pageGenerate = generatePageData(menuItems);
 class App extends React.Component {
     state = {
         collapsed: false,
-        location: this.props.location
     };
 
     onCollapse = collapsed => {
@@ -72,7 +71,7 @@ class App extends React.Component {
                 <Layout style={{ minHeight: '100vh' }}>
                     <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
                         <div className="logo" />
-                        <Menu theme="dark" defaultSelectedKeys={[this.state.location]} mode="inline">
+                        <Menu theme="dark" defaultSelectedKeys={[window.location.hash.toString()]} mode="inline">
                             {menuGenerate}
                         </Menu>
                     </Sider>
@@ -82,7 +81,9 @@ class App extends React.Component {
                             fontSize: "large",
                         }}>Report</Header>
                         <Content style={{ margin: '0 16px' }}>
-                            {pageGenerate}
+                            <Switch>
+                                {pageGenerate}
+                            </Switch>
                         </Content>
                         <Footer style={{ textAlign: 'center' }}>HAE © 2020</Footer>
                     </Layout>
