@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BackTop, PageHeader, Descriptions } from 'antd'
+import { Row, Col, BackTop, PageHeader, Descriptions } from 'antd'
 import DashBoard from '../components/DashBoard'
 import Information from '../components/Information'
 import {
@@ -27,9 +27,9 @@ class AnalystPage extends Component {
             title={projectInfo.name}
             subTitle={projectInfo.description}>
             <Descriptions size="small" column={2}>
-              <Descriptions.Item label="Github Source"><a>{projectInfo.git}</a></Descriptions.Item>
+              <Descriptions.Item label="Github Source"><a href={projectInfo.git}>{projectInfo.git}</a></Descriptions.Item>
               <Descriptions.Item label="Branch">{projectInfo.branch}</Descriptions.Item>
-              <Descriptions.Item label="Jenkins Job"><a>{projectInfo.jenkin_job}</a></Descriptions.Item>
+              <Descriptions.Item label="Jenkins Job"><a href={projectInfo.jenkin_job}>{projectInfo.jenkin_job}</a></Descriptions.Item>
               <Descriptions.Item label="Build Trigger">{projectInfo.build_trigger}</Descriptions.Item>
               <Descriptions.Item label="Remarks">{projectInfo.remarks}</Descriptions.Item>
             </Descriptions>
@@ -38,15 +38,20 @@ class AnalystPage extends Component {
         <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
           <BackTop />
           <h3 className='area_subject'><AppstoreOutlined /> Overview</h3>
-          <DashBoard dataDashboard={dataDashboard} dataInformation={dataInformation}/>
-          <h3 className='area_subject'> <InfoCircleOutlined /> Month: July 2020</h3>
+          <Row>
+            <Col span={12}><DashBoard dataSuite="Master" dataDashboard={dataDashboard.Master} dataInformation={dataInformation.Master} /></Col>
+            <Col span={12}><DashBoard dataSuite="01 - Ops Suite" dataDashboard={dataDashboard.OpsTCs} dataInformation={dataInformation.OpsTCs} /></Col>
+          </Row>
+          <Row style={{paddingTop: '80px'}}>
+            <Col span={12}><DashBoard dataSuite="02 - Admin" dataDashboard={dataDashboard.AdminTCs} dataInformation={dataInformation.AdminTCs} /></Col>
+            <Col span={12}><DashBoard dataSuite="03 - Email Workflow" dataDashboard={dataDashboard.EmailWorlflowTCs} dataInformation={dataInformation.EmailWorlflowTCs} /></Col>
+          </Row>
+          <h3 className='area_subject'> <InfoCircleOutlined /> Month: August 2020</h3>
           <h3 className='area_subject'><PieChartOutlined /> Weekly Status: development-portal</h3>
-          <Information dataInformation={dataInformation} />
+          <Information dataInformation={dataInformation} dataPortal={dataInformation.jenkins_report_dev} />
           <h3 className='area_subject'><PieChartOutlined /> Weekly Status: test-portal</h3>
-          <Information dataInformation={dataInformation} />
-          
+          <Information dataInformation={dataInformation} dataPortal={dataInformation.jenkins_report_test}/>
         </div>
-        
       </div>
     )
   }

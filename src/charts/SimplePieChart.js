@@ -65,9 +65,9 @@ export default class SimplePieChart extends PureComponent {
   };
 
   render() {
-    const data = this.props.dataTest.totalData
+    const data = this.props.dataTest
     return (
-      <ResponsiveContainer width={'100%'} height={300}>
+      <ResponsiveContainer width={'100%'} height={230}>
         <PieChart width={400} height={400}>
           <Pie
             activeIndex={this.state.activeIndex}

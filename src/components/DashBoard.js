@@ -26,8 +26,8 @@ const MyCardItem = ({
 
 export default class DashBoard extends React.Component {
   render() {
-    const totalTestCase = this.props.dataDashboard.totalTestCase;
-    const totalAutomationTest = this.props.dataDashboard.totalAutomationTest;
+    const totalTestCase = this.props.dataDashboard[1].total;
+    const totalAutomationTest = this.props.dataDashboard[0].total;
 
     const TotalTask = {
       title: totalTestCase,
@@ -60,18 +60,18 @@ export default class DashBoard extends React.Component {
                 gutter={gutter}
                 type='flex'
                 justify='space-around'>
-                <Col span={10}>
-                  <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '16px' }} />Status</p>
+                <Col span={24}>
+                  <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '10px' }} />{this.props.dataSuite}</p>
                   <SimplePieChart dataTest={this.props.dataInformation} />
                 </Col>
               </Row>
               <Row
                 gutter={gutter}
                 type='flex'
-                justify='space-around'>
+                justify='center'>
                 {
                   cardsList.map(item =>
-                    <Col key={item.content} span={Math.floor(24 / length)}>
+                    <Col key={item.content} span={Math.floor(18 / length)}>
                       <MyCardItem
                         {...item}
                         clickHander={item.clickHander && item.clickHander(toggleExpand)} />

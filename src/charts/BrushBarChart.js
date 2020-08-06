@@ -5,7 +5,7 @@ import {
 
 export default class Example extends PureComponent {
     render() {
-        const data = this.props.dataTest.dateData
+        const data = this.props.dataTest
         return (
             <ResponsiveContainer width={'100%'} height={500}>
                 <BarChart
@@ -24,7 +24,6 @@ export default class Example extends PureComponent {
                     <ReferenceLine y={0} stroke="#000" />
                     <Bar dataKey="Passes" fill="#c1e2c2" />
                     <Bar dataKey="Failures" fill="#ff97a2" />
-                    <Bar dataKey="Pending" fill="#8bd5f9" />
                 </BarChart>
             </ResponsiveContainer>
         );
