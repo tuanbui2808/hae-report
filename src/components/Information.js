@@ -28,16 +28,17 @@ export default class Information extends React.Component {
     const dataPortal = this.props.dataPortal;
     return (
       <Row>
-        <Row style={{ 'margin-bottom': '20px' }}>
+        <Row style={{ marginBottom: '20px' }}>
           <Col span={12} >
             <Descriptions size="small" column={1}>
               <Descriptions.Item label="Number Of Runs"><a href={projectInfo.jenkin_job}>{dataPortal.runs_number}</a></Descriptions.Item>
               <Descriptions.Item label="Portal"><a href={dataPortal.portal_url}>{dataPortal.portal}</a></Descriptions.Item>
+              <Descriptions.Item label="Total Pre-checks (Opened)"><a href={dataPortal.youtrack_url.precheck_total}>{dataPortal.youtrack.precheck_total}</a></Descriptions.Item>
             </Descriptions>
           </Col>
           <Col span={12}>
             <Descriptions size="small" column={1}>
-              <Descriptions.Item label="Total Defects"><a href={dataPortal.youtrack_url.defects}>{dataPortal.youtrack.defects}</a></Descriptions.Item>
+              <Descriptions.Item label="New Defects (Last Week)"><a href={dataPortal.youtrack_url.defects}>{dataPortal.youtrack.defects}</a></Descriptions.Item>
               <Descriptions.Item label="==> Bugs"><a href={dataPortal.youtrack_url.bugs}>{dataPortal.youtrack.bugs}</a></Descriptions.Item>
               <Descriptions.Item label="==> Script Issues"><a href={dataPortal.youtrack_url.scripts}>{dataPortal.youtrack.scripts}</a></Descriptions.Item>
               <Descriptions.Item label="==> Automation Pre-checks"><a href={dataPortal.youtrack_url.precheck}>{dataPortal.youtrack.precheck}</a></Descriptions.Item>
@@ -45,23 +46,23 @@ export default class Information extends React.Component {
           </Col>
         </Row >
         <Col span={6}>
-          <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '10px' }} />Week 01 (06/07/2020 - 10/07/2020) </p>
+          <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '10px' }} />Week 01</p>
           <BrushBarChart dataTest={this.props.dataPortal.dateData.week1} />
         </Col>
         <Col span={6}>
-          <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '10px' }} />Week 02 (13/07/2020 - 17/07/2020) </p>
+          <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '10px' }} />Week 02</p>
           <BrushBarChart dataTest={this.props.dataPortal.dateData.week2} />
         </Col>
         <Col span={6}>
-          <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '10px' }} />Week 03 (20/07/2020 - 24/07/2020) </p>
+          <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '10px' }} />Week 03</p>
           <BrushBarChart dataTest={this.props.dataPortal.dateData.week3} />
         </Col>
         <Col span={6}>
-          <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '10px' }} />Week 04 (27/07/2020 - 01/08/2020) </p>
+          <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '10px' }} />Week 04</p>
           <BrushBarChart dataTest={this.props.dataPortal.dateData.week4} />
         </Col>
         <Col span={24} className='main_information'>
-          <Card style={{ 'margin-bottom': '60px' }}>
+          <Card style={{ marginBottom: '60px' }}>
             <Row span={24}>
               <Col>
                 <LabelInfo title='Report Date' context={date} icon={<BoxPlotFilled />} />

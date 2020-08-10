@@ -1,7 +1,6 @@
 import React from 'react'
 import moment from 'moment'
 import jump from 'jump.js'
-import { TimeIcon } from './icons'
 
 /**
  * return calss name
