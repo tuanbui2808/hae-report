@@ -10,126 +10,128 @@
             "remarks": "N/A"
         },
         "jenkins_report_dev": {
-            "runs_number": "10",
+            "runs_number": "5",
             "portal": "development-portal",
             "portal_url": "https://development-portal.bfsah.com/",
             "youtrack": {
-                "defects": "50",
-                "bugs": "10",
-                "scripts": "35",
-                "precheck": "5"
+                "defects": "94",
+                "bugs": "0",
+                "scripts": "0",
+                "precheck": "94",
+                "precheck_total": "190"
             },
             "youtrack_url": {
                 "defects": "https://youtrack.haegroup.com/issues?q=Issue%20type:%20Automation%20created:%20%7BLast%20week%7D%20Portal%20Environment:%20development-portal",
-                "bugs": "https://youtrack.haegroup.com/issues?q=Type:%20Bug%20Issue%20type:%20Automation%20created:%20%7BLast%20week%7D%20Portal%20Environment:%20development-portal",
+                "bugs": "https://youtrack.haegroup.com/issues?q=Type:%20Bug%20Issue%20type:%20Automation%20created:%20%7BLast%20week%7D%20Portal%20Environment:%20development-portal%20State:%20-%7BAutomation%20Pre-Check%7D",
                 "scripts": "https://youtrack.haegroup.com/issues?q=Type:%20%7BScript%20Issue%7D%20Issue%20type:%20Automation%20created:%20%7BLast%20week%7D%20Portal%20Environment:%20development-portal",
-                "precheck": "https://youtrack.haegroup.com/issues?q=State:%20%7BAutomation%20Pre-Check%7D%20created:%20%7BLast%20week%7D%20Portal%20Environment:%20development-portal"
+                "precheck": "https://youtrack.haegroup.com/issues?q=State:%20%7BAutomation%20Pre-Check%7D%20created:%20%7BLast%20week%7D%20Portal%20Environment:%20development-portal",
+                "precheck_total": "https://youtrack.haegroup.com/issues?q=State:%20%7BAutomation%20Pre-Check%7D%20Portal%20Environment:%20development-portal"
             },
             "dateData": {
                 "week1": [
                     {
-                        "date": "July 08, 2020",
+                        "date": "Aug 03, 2020",
                         "Passes": 121,
                         "Failures": 313
                     },
                     {
-                        "date": "July 09, 2020",
-                        "Passes": 0,
-                        "Failures": 0
+                        "date": "Aug 04, 2020",
+                        "Passes": 121,
+                        "Failures": 313
                     },
                     {
-                        "date": "July 10, 2020",
-                        "Passes": 0,
-                        "Failures": 0
+                        "date": "Aug 05, 2020",
+                        "Passes": 121,
+                        "Failures": 313
                     },
                     {
-                        "date": "July 11, 2020",
-                        "Passes": 0,
-                        "Failures": 0
+                        "date": "Aug 06, 2020",
+                        "Passes": 121,
+                        "Failures": 313
                     },
                     {
-                        "date": "July 12, 2020",
-                        "Passes": 0,
-                        "Failures": 0
+                        "date": "Aug 07, 2020",
+                        "Passes": 121,
+                        "Failures": 313
                     }
                 ],
                 "week2": [
                     {
-                        "date": "July 08, 2020",
+                        "date": "Aug 10, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 09, 2020",
+                        "date": "Aug 11, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 10, 2020",
+                        "date": "Aug 12, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 11, 2020",
+                        "date": "Aug 13, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 12, 2020",
+                        "date": "Aug 14, 2020",
                         "Passes": 0,
                         "Failures": 0
                     }
                 ],
                 "week3": [
                     {
-                        "date": "July 08, 2020",
+                        "date": "Aug 17, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 09, 2020",
+                        "date": "Aug 18, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 10, 2020",
+                        "date": "Aug 19, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 11, 2020",
+                        "date": "Aug 20, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 12, 2020",
+                        "date": "Aug 21, 2020",
                         "Passes": 0,
                         "Failures": 0
                     }
                 ],
                 "week4": [
                     {
-                        "date": "July 08, 2020",
+                        "date": "Aug 24, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 09, 2020",
+                        "date": "Aug 25, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 10, 2020",
+                        "date": "Aug 26, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 11, 2020",
+                        "date": "Aug 27, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 12, 2020",
+                        "date": "Aug 28, 2020",
                         "Passes": 0,
                         "Failures": 0
                     }
@@ -137,126 +139,128 @@
             }
         },
         "jenkins_report_test": {
-            "runs_number": "10",
+            "runs_number": "5",
             "portal": "test-portal",
             "portal_url": "https://test-portal.bfsah.com/",
             "youtrack": {
-                "defects": "99",
-                "bugs": "99",
-                "scripts": "99",
-                "precheck": "99"
+                "defects": "1",
+                "bugs": "1",
+                "scripts": "0",
+                "precheck": "0",
+                "precheck_total": "147"
             },
             "youtrack_url": {
-                "defects": "https://youtrack.haegroup.com/issues?q=Issue%20type:%20Automation%20created:%20%7BLast%20week%7D%20Portal%20Environment:%test-portal",
-                "bugs": "https://youtrack.haegroup.com/issues?q=Type:%20Bug%20Issue%20type:%20Automation%20created:%20%7BLast%20week%7D%20Portal%20Environment:%20test-portal",
+                "defects": "https://youtrack.haegroup.com/issues?q=Issue%20type:%20Automation%20created:%20%7BLast%20week%7D%20Portal%20Environment:%20test-portal%20",
+                "bugs": "https://youtrack.haegroup.com/issues?q=Type:%20Bug%20Issue%20type:%20Automation%20created:%20%7BLast%20week%7D%20Portal%20Environment:%20test-portal%20State:-%7BAutomation%20Pre-Check%7D%20",
                 "scripts": "https://youtrack.haegroup.com/issues?q=Type:%20%7BScript%20Issue%7D%20Issue%20type:%20Automation%20created:%20%7BLast%20week%7D%20Portal%20Environment:%20test-portal",
-                "precheck": "https://youtrack.haegroup.com/issues?q=State:%20%7BAutomation%20Pre-Check%7D%20created:%20%7BLast%20week%7D%20Portal%20Environment:%20test-portal"
+                "precheck": "https://youtrack.haegroup.com/issues?q=State:%20%7BAutomation%20Pre-Check%7D%20created:%20%7BLast%20week%7D%20Portal%20Environment:%20test-portal",
+                "precheck_total": "https://youtrack.haegroup.com/issues?q=State:%20%7BAutomation%20Pre-Check%7D%20Portal%20Environment:%20test-portal"
             },
             "dateData": {
                 "week1": [
                     {
-                        "date": "July 08, 2020",
+                        "date": "Aug 03, 2020",
                         "Passes": 116,
                         "Failures": 319
                     },
                     {
-                        "date": "July 09, 2020",
-                        "Passes": 0,
-                        "Failures": 0
+                        "date": "Aug 04, 2020",
+                        "Passes": 116,
+                        "Failures": 319
                     },
                     {
-                        "date": "July 10, 2020",
-                        "Passes": 0,
-                        "Failures": 0
+                        "date": "Aug 05, 2020",
+                        "Passes": 115,
+                        "Failures": 320
                     },
                     {
-                        "date": "July 11, 2020",
-                        "Passes": 0,
-                        "Failures": 0
+                        "date": "Aug 06, 2020",
+                        "Passes": 116,
+                        "Failures": 319
                     },
                     {
-                        "date": "July 12, 2020",
-                        "Passes": 0,
-                        "Failures": 0
+                        "date": "Aug 07, 2020",
+                        "Passes": 116,
+                        "Failures": 319
                     }
                 ],
                 "week2": [
                     {
-                        "date": "July 08, 2020",
+                        "date": "Aug 10, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 09, 2020",
+                        "date": "Aug 11, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 10, 2020",
+                        "date": "Aug 12, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 11, 2020",
+                        "date": "Aug 13, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 12, 2020",
+                        "date": "Aug 14, 2020",
                         "Passes": 0,
                         "Failures": 0
                     }
                 ],
                 "week3": [
                     {
-                        "date": "July 08, 2020",
+                        "date": "Aug 17, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 09, 2020",
+                        "date": "Aug 18, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 10, 2020",
+                        "date": "Aug 19, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 11, 2020",
+                        "date": "Aug 20, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 12, 2020",
+                        "date": "Aug 21, 2020",
                         "Passes": 0,
                         "Failures": 0
                     }
                 ],
                 "week4": [
                     {
-                        "date": "July 08, 2020",
+                        "date": "Aug 24, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 09, 2020",
+                        "date": "Aug 25, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 10, 2020",
+                        "date": "Aug 26, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 11, 2020",
+                        "date": "Aug 27, 2020",
                         "Passes": 0,
                         "Failures": 0
                     },
                     {
-                        "date": "July 12, 2020",
+                        "date": "Aug 28, 2020",
                         "Passes": 0,
                         "Failures": 0
                     }
