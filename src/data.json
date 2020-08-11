@@ -288,11 +288,11 @@
         "OpsTCs": [
             {
                 "name": "Implemented",
-                "total": 235
+                "total": 352
             },
             {
                 "name": "Not Implemented",
-                "total": 832
+                "total": 715
             }
         ],
         "AdminTCs": [
