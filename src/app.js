@@ -17,12 +17,13 @@ const { Header, Content, Footer, Sider } = Layout;
 
 async function getAPIData() {
     var options = {
-        method: 'POST',
+        method: 'GET',
         url: config.testuff.url + 'test/?suite_path=Master->01 - Ops&branch=dxa2smgk5yc23axndpkoyvihkhm5d7o2&meta_only=True',
         headers:
         {
             'Authorization': 'Basic ' + authentication,
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
         },
         json: true
     };
