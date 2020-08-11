@@ -288,11 +288,11 @@
         "OpsTCs": [
             {
                 "name": "Implemented",
-                "total": 2
+                "total": 235
             },
             {
                 "name": "Not Implemented",
-                "total": 611
+                "total": 832
             }
         ],
         "AdminTCs": [
@@ -302,7 +302,7 @@
             },
             {
                 "name": "Not Implemented",
-                "total": 1457
+                "total": 1699
             }
         ],
         "EmailWorlflowTCs": [
@@ -312,17 +312,17 @@
             },
             {
                 "name": "Not Implemented",
-                "total": 104
+                "total": 250
             }
         ],
         "Master": [
             {
                 "name": "Implemented",
-                "total": 2
+                "total": 235
             },
             {
                 "name": "Not Implemented",
-                "total": 2172
+                "total": 2859
             }
         ],
         "totalData": [
