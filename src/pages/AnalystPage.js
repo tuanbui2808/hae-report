@@ -39,12 +39,12 @@ class AnalystPage extends Component {
           <BackTop />
           <h3 className='area_subject'><AppstoreOutlined /> Overview</h3>
           <Row>
-            <Col span={12}><DashBoard dataSuite="Master" dataDashboard={dataDashboard.Master} dataInformation={dataInformation.Master} /></Col>
-            <Col span={12}><DashBoard dataSuite="01 - Ops Suite" dataDashboard={dataDashboard.OpsTCs} dataInformation={dataInformation.OpsTCs} /></Col>
+            <Col span={12}><DashBoard dataSuite="Master" dataDashboard={dataDashboard.Master} /></Col>
+            <Col span={12}><DashBoard dataSuite="01 - Ops Suite" dataDashboard={dataDashboard.OpsTCs}/></Col>
           </Row>
           <Row style={{paddingTop: '80px'}}>
-            <Col span={12}><DashBoard dataSuite="02 - Admin" dataDashboard={dataDashboard.AdminTCs} dataInformation={dataInformation.AdminTCs} /></Col>
-            <Col span={12}><DashBoard dataSuite="03 - Email Workflow" dataDashboard={dataDashboard.EmailWorlflowTCs} dataInformation={dataInformation.EmailWorlflowTCs} /></Col>
+            <Col span={12}><DashBoard dataSuite="02 - Admin" dataDashboard={dataDashboard.AdminTCs} /></Col>
+            <Col span={12}><DashBoard dataSuite="03 - Email Workflow" dataDashboard={dataDashboard.EmailWorlflowTCs} /></Col>
           </Row>
           <h3 className='area_subject'> <InfoCircleOutlined /> Month: August 2020</h3>
           <h3 className='area_subject'><PieChartOutlined /> Weekly Status: development-portal</h3>

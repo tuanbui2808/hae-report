@@ -62,7 +62,7 @@ export default class DashBoard extends React.Component {
                 justify='space-around'>
                 <Col span={24}>
                   <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '10px' }} />{this.props.dataSuite}</p>
-                  <SimplePieChart dataTest={this.props.dataInformation} />
+                  <SimplePieChart dataTest={this.props.dataDashboard} />
                 </Col>
               </Row>
               <Row

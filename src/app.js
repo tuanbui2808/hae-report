@@ -7,6 +7,7 @@ import { ProjectOutlined } from '@ant-design/icons';
 import { HashRouter as Router, Route, Link, Switch } from "react-router-dom";
 import AnalystPage from './pages/AnalystPage';
 import data from './data.json';
+import testuff_data from './testuff_report_data.json';
 var config = require('./Config.json');
 
 var rp = require('request-promise');
@@ -15,34 +16,8 @@ var authentication = btoa(config.testuff.user + ":" + config.testuff.pass);
 
 const { Header, Content, Footer, Sider } = Layout;
 
-async function getAPIData() {
-    var options = {
-        method: 'GET',
-        url: config.testuff.url + 'test/?suite_path=Master->01 - Ops&branch=dxa2smgk5yc23axndpkoyvihkhm5d7o2&meta_only=True',
-        headers:
-        {
-            'Authorization': 'Basic ' + authentication,
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*'
-        },
-        json: true
-    };
-
-    try {
-        let rsp = await rp(options);
-        if (rsp.objects.length != 0) {
-            console.log('test');
-            console.log(rsp.objects[0].total_count);
-            return rsp.objects[0].total_count;
-        }
-    } catch (error) {
-        console.log(error);
-    }
-}
-
 const menuItems = data
 const generateMenu = () => {
-    getAPIData();
     const menuData = Object.keys(menuItems);
     const menu = [];
     for (let i = 0; i < menuData.length; i++) {
@@ -69,7 +44,7 @@ const generatePageData = () => {
             <div key={i.toString()}>
                 <Route
                     exact path={routeMenuItems}
-                    component={() => <AnalystPage dataDashboard={dataDashboard} dataInformation={dataInformation} />}
+                    component={() => <AnalystPage dataDashboard={testuff_data} dataInformation={dataInformation} />}
                 />
             </div>
         )

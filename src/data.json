@@ -272,68 +272,6 @@
             "bugs": "10",
             "scripts": "35",
             "precheck": "5"
-        },
-        "testuff": {
-            "OpsTCs": "01 - Ops",
-            "AdminTCs": "02 - Admin",
-            "EmailWorlflowTCs": "03 - Email Workflow",
-            "MasterTCs": "Master"
-        },
-        "suites": {
-            "OpsTCs": "613",
-            "AdminTCs": "1457",
-            "EmailWorlflowTCs": "104",
-            "MasterTCs": "2174"
-        },
-        "OpsTCs": [
-            {
-                "name": "Implemented",
-                "total": 352
-            },
-            {
-                "name": "Not Implemented",
-                "total": 715
-            }
-        ],
-        "AdminTCs": [
-            {
-                "name": "Implemented",
-                "total": 0
-            },
-            {
-                "name": "Not Implemented",
-                "total": 1699
-            }
-        ],
-        "EmailWorlflowTCs": [
-            {
-                "name": "Implemented",
-                "total": 0
-            },
-            {
-                "name": "Not Implemented",
-                "total": 250
-            }
-        ],
-        "Master": [
-            {
-                "name": "Implemented",
-                "total": 352
-            },
-            {
-                "name": "Not Implemented",
-                "total": 2742
-            }
-        ],
-        "totalData": [
-            {
-                "name": "Implemented",
-                "total": 421
-            },
-            {
-                "name": "Not Implemented",
-                "total": 176
-            }
-        ]
+        }
     }
 }
