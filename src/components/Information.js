@@ -47,16 +47,6 @@ export default class Information extends React.Component {
         </Row >
         <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '10px' }} />Automation Result</p>
         <BrushBarChart dataTest={this.props.dataPortal.resultData} />
-        <Col span={24} className='main_information'>
-          <Card style={{ marginBottom: '60px' }}>
-            <Row span={24}>
-              <Col>
-                <LabelInfo title='Report Date' context={date} icon={<BoxPlotFilled />} />
-                <LabelInfo title='Report Time' context={date} icon={<ClockCircleFilled />} />
-              </Col>
-            </Row>
-          </Card>
-        </Col>
       </Row>
     )
   }
