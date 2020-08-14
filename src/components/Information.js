@@ -45,22 +45,8 @@ export default class Information extends React.Component {
             </Descriptions>
           </Col>
         </Row >
-        <Col span={6}>
-          <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '10px' }} />Week 01</p>
-          <BrushBarChart dataTest={this.props.dataPortal.dateData.week1} />
-        </Col>
-        <Col span={6}>
-          <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '10px' }} />Week 02</p>
-          <BrushBarChart dataTest={this.props.dataPortal.dateData.week2} />
-        </Col>
-        <Col span={6}>
-          <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '10px' }} />Week 03</p>
-          <BrushBarChart dataTest={this.props.dataPortal.dateData.week3} />
-        </Col>
-        <Col span={6}>
-          <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '10px' }} />Week 04</p>
-          <BrushBarChart dataTest={this.props.dataPortal.dateData.week4} />
-        </Col>
+        <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '10px' }} />Automation Result</p>
+        <BrushBarChart dataTest={this.props.dataPortal.resultData} />
         <Col span={24} className='main_information'>
           <Card style={{ marginBottom: '60px' }}>
             <Row span={24}>

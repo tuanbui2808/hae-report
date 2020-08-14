@@ -15,6 +15,7 @@ export default class Example extends PureComponent {
                     margin={{
                         top: 10, right: 30, left: 30, bottom: 10,
                     }}
+                    barSize={20}
                 >
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis dataKey="date" />

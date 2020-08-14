@@ -1,0 +1,42 @@
+{
+  "Master": [
+    {
+      "name": "Implemented",
+      "total": 352
+    },
+    {
+      "name": "Not Implemented",
+      "total": 2742
+    }
+  ],
+  "OpsTCs": [
+    {
+      "name": "Implemented",
+      "total": 352
+    },
+    {
+      "name": "Not Implemented",
+      "total": 715
+    }
+  ],
+  "AdminTCs": [
+    {
+      "name": "Implemented",
+      "total": 0
+    },
+    {
+      "name": "Not Implemented",
+      "total": 1699
+    }
+  ],
+  "EmailWorlflowTCs": [
+    {
+      "name": "Implemented",
+      "total": 0
+    },
+    {
+      "name": "Not Implemented",
+      "total": 250
+    }
+  ]
+}
