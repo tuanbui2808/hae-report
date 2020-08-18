@@ -38,7 +38,7 @@ export default class Information extends React.Component {
           </Col>
           <Col span={12}>
             <Descriptions size="small" column={1}>
-              <Descriptions.Item label="New Defects (Last Week)"><a href={dataPortal.youtrack_url.defects}>{dataPortal.youtrack.defects}</a></Descriptions.Item>
+              <Descriptions.Item label="New Defects (Last Week)"><a href={dataPortal.youtrack_url.defects}>{dataPortal.youtrack.new_defects_lastweeek}</a></Descriptions.Item>
               <Descriptions.Item label="==> Bugs"><a href={dataPortal.youtrack_url.bugs}>{dataPortal.youtrack.bugs}</a></Descriptions.Item>
               <Descriptions.Item label="==> Script Issues"><a href={dataPortal.youtrack_url.scripts}>{dataPortal.youtrack.scripts}</a></Descriptions.Item>
               <Descriptions.Item label="==> Automation Pre-checks"><a href={dataPortal.youtrack_url.precheck}>{dataPortal.youtrack.precheck}</a></Descriptions.Item>
