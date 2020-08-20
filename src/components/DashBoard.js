@@ -26,28 +26,28 @@ const MyCardItem = ({
 
 export default class DashBoard extends React.Component {
   render() {
-    const totalAutomationTest = this.props.dataDashboard[0].total;
+    const automatedTest = this.props.dataDashboard[0].total;
     const pendingAutomation = this.props.dataDashboard[1].total;
     const cantAutomateTest = this.props.dataDashboard[2].total;
 
     const TotalTask = {
       title: pendingAutomation,
       content: 'Pending Automation Tests',
-      label: `${getPercentage(pendingAutomation, (totalAutomationTest + pendingAutomation + cantAutomateTest))} %`,
+      label: `${getPercentage(pendingAutomation, (automatedTest + pendingAutomation + cantAutomateTest))} %`,
       labelColor: '#00C49F'
     }
     const OnProgressTask = {
-      title: totalAutomationTest,
+      title: automatedTest,
       content: 'Automated Tests',
       labelColor: '#0088FE',
-      label: `${getPercentage(totalAutomationTest, (totalAutomationTest + pendingAutomation + cantAutomateTest))} %`,
+      label: `${getPercentage(automatedTest, (automatedTest + pendingAutomation + cantAutomateTest))} %`,
     }
 
     const cardsList = [OnProgressTask, TotalTask]
     const TaskDone = {
       title: cantAutomateTest,
       content: "Can't Automate",
-      label: `${getPercentage(totalAutomationTest, (totalAutomationTest + pendingAutomation + cantAutomateTest))} %`,
+      label: `${getPercentage(cantAutomateTest, (automatedTest + pendingAutomation + cantAutomateTest))} %`,
       labelColor: '#FF8042',
     }
     cardsList.push(TaskDone)
