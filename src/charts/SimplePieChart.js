@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { PieChart, Pie, Sector, ResponsiveContainer, Cell } from 'recharts';
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#D3D3D3'];
 
 const renderActiveShape = (props) => {
   const RADIAN = Math.PI / 180;
@@ -50,7 +50,6 @@ const renderActiveShape = (props) => {
   );
 };
 
-
 export default class SimplePieChart extends PureComponent {
   static jsfiddleUrl = 'https://jsfiddle.net/alidingling/hqnrgxpj/';
 
@@ -67,7 +66,7 @@ export default class SimplePieChart extends PureComponent {
   render() {
     const data = this.props.dataTest
     return (
-      <ResponsiveContainer width={'100%'} height={230}>
+      <ResponsiveContainer width={'100%'} height={250}>
         <PieChart width={400} height={400}>
           <Pie
             activeIndex={this.state.activeIndex}

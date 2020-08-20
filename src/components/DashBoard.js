@@ -26,26 +26,28 @@ const MyCardItem = ({
 
 export default class DashBoard extends React.Component {
   render() {
-    const totalTestCase = this.props.dataDashboard[1].total;
     const totalAutomationTest = this.props.dataDashboard[0].total;
+    const pendingAutomation = this.props.dataDashboard[1].total;
+    const cantAutomateTest = this.props.dataDashboard[2].total;
 
     const TotalTask = {
-      title: totalTestCase,
-      content: 'Not Implemented Tests',
-      label: `${getPercentage(totalTestCase, (totalAutomationTest+totalTestCase))} %`,
-      labelColor: '#00C49F',
+      title: pendingAutomation,
+      content: 'Pending Automation Tests',
+      label: `${getPercentage(pendingAutomation, (totalAutomationTest + pendingAutomation + cantAutomateTest))} %`,
+      labelColor: '#00C49F'
     }
     const OnProgressTask = {
       title: totalAutomationTest,
       content: 'Automated Tests',
       labelColor: '#0088FE',
-      label: `${getPercentage(totalAutomationTest, (totalAutomationTest+totalTestCase))} %`,
+      label: `${getPercentage(totalAutomationTest, (totalAutomationTest + pendingAutomation + cantAutomateTest))} %`,
     }
 
     const cardsList = [OnProgressTask, TotalTask]
     const TaskDone = {
-      title: totalTestCase + totalAutomationTest,
-      content: 'Total',
+      title: cantAutomateTest,
+      content: "Can't Automate",
+      label: `${getPercentage(totalAutomationTest, (totalAutomationTest + pendingAutomation + cantAutomateTest))} %`,
       labelColor: '#FF8042',
     }
     cardsList.push(TaskDone)
@@ -61,11 +63,12 @@ export default class DashBoard extends React.Component {
                 type='flex'
                 justify='space-around'>
                 <Col span={24}>
-                  <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '10px' }} />{this.props.dataSuite}</p>
+                  <p className='chart_title'><PieChartFilled style={{ marginRight: '10px', margin: '0px' }} />{this.props.dataSuite}</p>
                   <SimplePieChart dataTest={this.props.dataDashboard} />
                 </Col>
               </Row>
-              <Row
+              <Row 
+                style={{ marginTop: '30px'}}
                 gutter={gutter}
                 type='flex'
                 justify='center'>

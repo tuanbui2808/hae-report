@@ -1,42 +1,74 @@
 {
   "Master": [
     {
-      "name": "Implemented",
-      "total": 352
+      "name": "Automated",
+      "total": 1
     },
     {
-      "name": "Not Implemented",
-      "total": 2742
+      "name": "Pending Automation",
+      "total": 2
+    },
+    {
+      "name": "Can't Automate",
+      "total": 3
+    },
+    {
+      "name": "Unlabeled Tests",
+      "total": 4
     }
   ],
   "OpsTCs": [
     {
-      "name": "Implemented",
+      "name": "Automated",
       "total": 352
     },
     {
-      "name": "Not Implemented",
-      "total": 715
+      "name": "Pending Automation",
+      "total": 2742
+    },
+    {
+      "name": "Can't Automate",
+      "total": 2742
+    },
+    {
+      "name": "Unlabeled Tests",
+      "total": 2742
     }
   ],
   "AdminTCs": [
     {
-      "name": "Implemented",
-      "total": 0
+      "name": "Automated",
+      "total": 352
     },
     {
-      "name": "Not Implemented",
-      "total": 1699
+      "name": "Pending Automation",
+      "total": 2742
+    },
+    {
+      "name": "Can't Automate",
+      "total": 2742
+    },
+    {
+      "name": "Unlabeled Tests",
+      "total": 2742
     }
   ],
   "EmailWorlflowTCs": [
     {
-      "name": "Implemented",
-      "total": 0
+      "name": "Automated",
+      "total": 352
     },
     {
-      "name": "Not Implemented",
-      "total": 250
+      "name": "Pending Automation",
+      "total": 2742
+    },
+    {
+      "name": "Can't Automate",
+      "total": 2742
+    },
+    {
+      "name": "Unlabeled Tests",
+      "total": 2742
     }
   ]
 }
