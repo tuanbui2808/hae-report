@@ -29,25 +29,27 @@ export default class DashBoard extends React.Component {
     const automatedTest = this.props.dataDashboard[0].total;
     const pendingAutomation = this.props.dataDashboard[1].total;
     const cantAutomateTest = this.props.dataDashboard[2].total;
+    const unlabeledTest = this.props.dataDashboard[3].total;
+    const totalTest = automatedTest + pendingAutomation + cantAutomateTest + unlabeledTest;
 
     const TotalTask = {
       title: pendingAutomation,
       content: 'Pending Automation Tests',
-      label: `${getPercentage(pendingAutomation, (automatedTest + pendingAutomation + cantAutomateTest))} %`,
+      label: `${getPercentage(pendingAutomation, totalTest)} %`,
       labelColor: '#00C49F'
     }
     const OnProgressTask = {
       title: automatedTest,
       content: 'Automated Tests',
       labelColor: '#0088FE',
-      label: `${getPercentage(automatedTest, (automatedTest + pendingAutomation + cantAutomateTest))} %`,
+      label: `${getPercentage(automatedTest, totalTest)} %`,
     }
 
     const cardsList = [OnProgressTask, TotalTask]
     const TaskDone = {
       title: cantAutomateTest,
       content: "Can't Automate",
-      label: `${getPercentage(cantAutomateTest, (automatedTest + pendingAutomation + cantAutomateTest))} %`,
+      label: `${getPercentage(cantAutomateTest, totalTest)} %`,
       labelColor: '#FF8042',
     }
     cardsList.push(TaskDone)
