@@ -46,7 +46,7 @@ class AnalystPage extends Component {
             <Col span={12}><DashBoard dataSuite="02 - Admin" dataDashboard={dataDashboard.AdminTCs} /></Col>
             <Col span={12}><DashBoard dataSuite="03 - Email Workflow" dataDashboard={dataDashboard.EmailWorlflowTCs} /></Col>
           </Row>
-          <h3 className='area_subject'> <InfoCircleOutlined /> Month: August 2020</h3>
+          <h3 className='area_subject'> <InfoCircleOutlined /> Month: September 2020</h3>
           <h3 className='area_subject'><PieChartOutlined /> Status: development-portal</h3>
           <Information dataInformation={dataInformation} dataPortal={dataInformation.jenkins_report_dev} />
           <h3 className='area_subject'><PieChartOutlined /> Status: test-portal</h3>
